@@ -108,9 +108,9 @@ class Swiper extends Component {
   }
 
   initializeCardStyle = () => {
-    this.forceUpdate()
+    //this.forceUpdate()
     Dimensions.addEventListener('change', () => {
-      this.forceUpdate()
+      this._mounted && this.forceUpdate()
     })
   }
 
